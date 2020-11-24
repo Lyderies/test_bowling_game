@@ -6,6 +6,7 @@ class BowlingGameTests(unittest.TestCase):
         for _ in range(number_of_times):
             game.throw(pins)
 
+# changed equals to equal
     def test_all_gutters(self):
         game = BowlingGame()
         self.throw_many(game, 20 ,0 )

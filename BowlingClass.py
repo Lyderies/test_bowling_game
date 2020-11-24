@@ -13,10 +13,12 @@ class BowlingGame(object):
             if self.throws[ball]==10:
                 self.score +=10 + self.throws[ball+1] + self.throws[ball +2]
                 ball += 1
-            elif self.throw[ball] + self.throws[ball+1] == 10:
+            elif self.throws[ball] + self.throws[ball+1] == 10:
                 self.score += 10 + self.throws [ball +2]
                 ball +=2
             else:
-                self.score += self.throws[ball] + self.throw[ball + 1]
+                self.score += self.throws[ball] + self.throws[ball + 1]
                 ball += 2
+
+            # fixed throw to throws in elif and else 
  
