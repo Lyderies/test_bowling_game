@@ -1,4 +1,3 @@
-import unittest
 class BowlingGame(object):
     def __init__(self):
         self.throws= [] # change throw to throws 

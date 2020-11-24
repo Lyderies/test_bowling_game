@@ -1,5 +1,5 @@
 import unittest
-import BowlingGame
+from BowlingClass import BowlingGame
 
 class BowlingGameTests(unittest.TestCase):
     def throw_many(self, game, number_of_times, pins):
