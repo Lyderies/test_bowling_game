@@ -1,5 +1,5 @@
 import unittest
-from BowlingClass import BowlingGame
+from BowlingClass import BowlingGame # importing bowling game class
 
 class BowlingGameTests(unittest.TestCase):
     def throw_many(self, game, number_of_times, pins):
@@ -10,13 +10,13 @@ class BowlingGameTests(unittest.TestCase):
         game = BowlingGame()
         self.throw_many(game, 20 ,0 )
         game.calculate_score()
-        self.assertEquals(game.score,0)
+        self.assertEqual(game.score,0)
 
     def test_perfect_game(self):
         game = BowlingGame()
         self.throw_many(game, 12, 10)
         game.calculate_score()
-        self.assertEquals(game.score, 300)
+        self.assertEqual(game.score, 300)
 
     def test_all_ones(self): #fixed indent error
         game = BowlingGame()
@@ -24,7 +24,7 @@ class BowlingGameTests(unittest.TestCase):
         pins = 1
         self.throw_many(game, number_of_times, pins)
         game.calculate_score()
-        self.assertEquals(game.score, 20)
+        self.assertEqual(game.score, 20)
 
 
 
@@ -38,7 +38,7 @@ class BowlingGameTests(unittest.TestCase):
         for _ in range(15):
             game.throw(0)
         game.calculate_score()
-        self.assertEquals(game.score, 15)
+        self.assertEqual(game.score, 15)
 
 
     def test_for_spare(self):
@@ -50,7 +50,7 @@ class BowlingGameTests(unittest.TestCase):
         for _ in range(16):
             game.throw(0)
         game.calculate_score()
-        self.assertEquals(game.score, 24)
+        self.assertEqual(game.score, 24)
 
     def test_for_strike(self):
         game=BowlingGame()
@@ -59,4 +59,4 @@ class BowlingGameTests(unittest.TestCase):
         game.throw(2)
         self.throw_many(game, 17,0)
         game.calculate_score()
-        self.assertEquals(game.score, 22)
+        self.assertEqual(game.score, 22)

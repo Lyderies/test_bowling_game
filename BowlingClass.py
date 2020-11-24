@@ -4,7 +4,7 @@ class BowlingGame(object):
         self.score= 0
 
     def throw(self,pins):
-        self.throw.append(pins)
+        self.throws.append(pins)
 
 
     def calculate_score(self):
