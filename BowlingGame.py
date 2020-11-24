@@ -1,7 +1,7 @@
 import unittest
 class BowlingGame(object):
     def __init__(self):
-        self.throw= []
+        self.throws= [] # change throw to throws 
         self.score= 0
 
     def throw(self,pins):
