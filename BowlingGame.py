@@ -38,13 +38,13 @@ class BowlingGameTests(unittest.TestCase):
         game.calculate_score()
         self.assertEquals(game.score, 300)
 
-        def test_all_ones(self):
-            game = BowlingGame()
-            number_of_times = 20
-            pins = 1
-            self.throw_many(game, number_of_times, pins)
-            game.calculate_score()
-            self.assertEquals(game.score, 20)
+    def test_all_ones(self): #fixed indent error
+        game = BowlingGame()
+        number_of_times = 20
+        pins = 1
+        self.throw_many(game, number_of_times, pins)
+        game.calculate_score()
+        self.assertEquals(game.score, 20)
 
 
 
