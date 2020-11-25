@@ -1,4 +1,11 @@
 class BowlingGame(object):
+    """Class for bowling frames
+
+    Args:
+        object ([self]): [
+            Class has functions which allow the tests to check if a strike, spare or number of pins were counted
+            ]
+    """
     def __init__(self):
         self.throws= [] # change throw to throws 
         self.score= 0

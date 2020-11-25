@@ -12,12 +12,19 @@ class BowlingGameTests(unittest.TestCase):
         self.throw_many(game, 20 ,0 )
         game.calculate_score()
         self.assertEqual(game.score,0)
+        """
+            Testing function for an all 0 score
+        """
+
 
     def test_perfect_game(self):
         game = BowlingGame()
         self.throw_many(game, 12, 10)
         game.calculate_score()
         self.assertEqual(game.score, 300)
+        """
+            Testing function for all frames to knock 10 frames
+        """
 
     def test_all_ones(self): #fixed indent error
         game = BowlingGame()
@@ -26,7 +33,9 @@ class BowlingGameTests(unittest.TestCase):
         self.throw_many(game, number_of_times, pins)
         game.calculate_score()
         self.assertEqual(game.score, 20)
-
+        """
+            Testing function for checking if game = 20 points are all frames = 1
+        """
 
 
     def test_different_throws (self):
