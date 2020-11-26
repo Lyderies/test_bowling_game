@@ -16,7 +16,6 @@ class BowlingGameTests(unittest.TestCase):
             Testing function for an all 0 score
         """
 
-
     def test_perfect_game(self):
         game = BowlingGame()
         self.throw_many(game, 12, 10)
@@ -25,7 +24,6 @@ class BowlingGameTests(unittest.TestCase):
         """
             Testing function for all frames to knock 10 frames
         """
-
     def test_all_ones(self): #fixed indent error
         game = BowlingGame()
         number_of_times = 20
@@ -36,7 +34,6 @@ class BowlingGameTests(unittest.TestCase):
         """
             Testing function for checking if game = 20 points are all frames = 1
         """
-
 
     def test_different_throws (self):
         game = BowlingGame()
@@ -49,7 +46,9 @@ class BowlingGameTests(unittest.TestCase):
             game.throw(0)
         game.calculate_score()
         self.assertEqual(game.score, 15)
-
+        """
+            Testing different scored frames
+        """
 
     def test_for_spare(self):
         game = BowlingGame()
@@ -61,6 +60,9 @@ class BowlingGameTests(unittest.TestCase):
             game.throw(0)
         game.calculate_score()
         self.assertEqual(game.score, 24)
+        """
+            Testing score for spares
+        """
 
     def test_for_strike(self):
         game=BowlingGame()
@@ -70,3 +72,8 @@ class BowlingGameTests(unittest.TestCase):
         self.throw_many(game, 17,0)
         game.calculate_score()
         self.assertEqual(game.score, 22)
+        """
+            Testing score for strikes
+        """
+
+BowlingGameTests.__doc__ = "Test for basic function"

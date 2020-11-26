@@ -1,3 +1,5 @@
+
+
 class BowlingGame(object):
     """Class for bowling frames
 
@@ -27,5 +29,5 @@ class BowlingGame(object):
                 self.score += self.throws[ball] + self.throws[ball + 1]
                 ball += 2
 
-            # fixed throw to throws in elif and else 
+            calculate_score.__doc__ = "fixed throw to throws in elif and else"
  
