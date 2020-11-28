@@ -11,12 +11,21 @@ class BowlingGame(object):
     def __init__(self):
         self.throws= [] # change throw to throws 
         self.score= 0
+        """
+            Creates array for throws of scores
+        """
 
     def throw(self,pins):
         self.throws.append(pins)
+        """
+            Uses pins for a throw out of 10
+        """
 
 
     def calculate_score(self):
+        """
+            simple function for a throw, strike and spare        
+        """
         ball = 0
         for frames in range(10):
             if self.throws[ball]==10:
@@ -29,5 +38,6 @@ class BowlingGame(object):
                 self.score += self.throws[ball] + self.throws[ball + 1]
                 ball += 2
 
-            calculate_score.__doc__ = "fixed throw to throws in elif and else"
+             # fixed throw to throws in elif and else
  
+BowlingGame.__doc__ = "fixes to blowling game class"

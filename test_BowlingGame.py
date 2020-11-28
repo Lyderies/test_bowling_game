@@ -76,4 +76,4 @@ class BowlingGameTests(unittest.TestCase):
             Testing score for strikes
         """
 
-BowlingGameTests.__doc__ = "Test for basic function"
+BowlingGameTests.__doc__ = "Tests for basic function"
